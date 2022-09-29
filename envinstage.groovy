@@ -13,12 +13,12 @@ pipeline {
         demo = "STAGE"
       }
       steps {
-        sh 'echo "git is $git and demo is $git"'
+        sh 'echo "git is $git and demo is $demo"'
       }
     }
     stage("global") {
       steps {
-          sh 'echo "git is $git and demo is $git"'
+          sh 'echo "git is $git and demo is $demo"'
       }
     }
   }
